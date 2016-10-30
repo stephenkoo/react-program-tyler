@@ -22,7 +22,7 @@ module.exports = {
         test: [/\.js$/, /\.es6$/],
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
-        query: {presets: ['es2017', 'react']}
+        query: {presets: ['es2017', 'react']} // Alternatively placed in .babelrc
       },{
         test: /\.scss$/,
         loaders: ['style', 'css', 'postcss', 'sass']
