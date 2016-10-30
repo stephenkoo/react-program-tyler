@@ -1,0 +1,38 @@
+{
+  "name": "react-JS-program",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenkoo/react-program-tyler.git"
+  },
+  "author": "Stephen Koo <stephenyrkoo@gmail.com> (https://stephenkoo.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenkoo/react-program-tyler/issues"
+  },
+  "homepage": "https://github.com/stephenkoo/react-program-tyler#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.24.0",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "^1.1.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
