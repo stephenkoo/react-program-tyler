@@ -8,6 +8,7 @@
 ..* `babel-{core,loader} babel-preset-{react,es2017}`
 ..* `style-loader css-loader postcss-loader autoprefixer sass-loader node-sass`
 ..* `html-webpack-plugin` to replicate html files to webpack's /dist folder
+0. `npm i -S react-router`
 
 (You can use the npm-install-webpack-plugin module to automatically install modules in webpack.config.js & skip above steps.)
 

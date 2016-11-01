@@ -20,7 +20,8 @@
   "homepage": "https://github.com/stephenkoo/react-program-tyler#readme",
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-router": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
