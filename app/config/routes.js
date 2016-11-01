@@ -12,7 +12,12 @@ let Home = require('../components/Home');
 let routes = (
   <Router>
     <Route path='/' component={Main}> // Means: No matter what path someone goes to, always make sure Main component is active (e.g. topbar/footbar)
-      <Route path='/home' component={Home} /> // Main component in charge of loading its child routes - done in Main.js
+      // <Route path='/home' component={Home} /> // Main component in charge of loading its child routes - done in Main.js
+      <IndexRoute component={Home} /> // IndexRoute is active when other routes are not
+      <Route path='playerOne' header='Player One' component={PromptContainer} />
+      <Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer} />
+      <Route path='battle' component={ConfirmBattleContainer} />
+      <Route path='results' component={ResultsContainer} />
     </Route>
   </Router>
 )
