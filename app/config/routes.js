@@ -8,6 +8,7 @@ let hashHistory = ReactRouter.hashHistory;
 // Require your components once you establish routes
 let Main = require('../components/Main');
 let Home = require('../components/Home');
+let PromptContainer = require('../components/PromptContainer');
 
 // Build routes
 let routes = (
