@@ -1,7 +1,11 @@
 let React = require('react');
 let transparentBg= require('../styles').transparentBg;
+let PropTypes = React.PropTypes; // Stipulate what type a prop is, so no errors
 
 let Prompt = React.createClass({
+    propTypes: {
+      header: PropTypes.string.isRequired // Rejects e.g. array inputs
+    },
     render: function() {
         return (
           <div className="jumbotron" style={transparentBg}>
