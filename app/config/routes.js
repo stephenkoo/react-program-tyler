@@ -10,6 +10,7 @@ let Main = require('../components/Main');
 let Home = require('../components/Home');
 let PromptContainer = require('../components/PromptContainer');
 let ConfirmBattleContainer = require(('../components/ConfirmBattleContainer');
+let ResultsContainer = require('../containers/ResultsContainer');
 
 // Build routes
 let routes = (
