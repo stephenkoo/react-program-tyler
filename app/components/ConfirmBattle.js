@@ -2,6 +2,7 @@ let React = require('react');
 let PropTypes = React.PropTypes;
 let styles = require('../styles');
 let link = require('react-router').link;
+let UserDetails = require('./UserDetails');
 
 function puke (object) {
   return <pre>{JSON.stringify(obj, null, '')}</pre>
@@ -19,11 +20,13 @@ function ConfirmBattle (object) {
           <div className='col-sm-8 col-sm-offset-2'>
             <div className='col-sm-6'>
               <p className='lead'>Player 1</p>
-              {puke(props.playerInfo[0])}
+              // {puke(props.playerInfo[0])}
+              <UserDetails info={props.playersInfo[0]} />
             </div>
             <div className='col-sm-6'>
               <p className='lead'>Player 2</p>
-              {puke(props.playerInfo[1])}
+              // {puke(props.playerInfo[1])}
+              <UserDetails info={props.playersInfo[1]} />
             </div>
           </div>
           <div className='col-sm-8 col-sm-offset-2'>
