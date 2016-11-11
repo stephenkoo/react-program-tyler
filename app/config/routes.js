@@ -9,6 +9,7 @@ let hashHistory = ReactRouter.hashHistory;
 let Main = require('../components/Main');
 let Home = require('../components/Home');
 let PromptContainer = require('../components/PromptContainer');
+let ConfirmBattleContainer = require(('../components/ConfirmBattleContainer');
 
 // Build routes
 let routes = (

@@ -10,6 +10,7 @@
 ..* `html-webpack-plugin` to replicate html files to webpack's /dist folder
 0. `npm i -S react-router`
 0. `npm i -S raven-js` to use Sentry to check user errors
+0. `npm  i -S axios`
 (You can use the npm-install-webpack-plugin module to automatically install modules in webpack.config.js & skip above steps.)
 
 ## Run webpack

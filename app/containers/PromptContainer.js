@@ -1,5 +1,4 @@
 let React = require('react');
-let transparentBg= require('../styles').transparentBg;
 let Prompt = require('../components/Prompt');
 
 let PromptContainer = React.createClass({
