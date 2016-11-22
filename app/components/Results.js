@@ -4,6 +4,7 @@ let styles = require('../styles');
 let UserDetails = require('./UserDetails');
 let UserDetailsWrapper = require('./UserDetailsWrapper');
 let Link = require('react-router').Link;
+let MainContainer = require('./MainContainer');
 
 // function puke (obj) {
 //   return <pre>{JSON.stringify(obj, 2, ' ')}</pre>
@@ -31,10 +32,10 @@ function Results (props) {
   // Checks for tie
   if (props.scores[0] === props.scores[1]) {
     return (
-      <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
+      <MainContainer>
         <h1>It's a tie!</h1>
         <StartOver />
-      </div>
+      </MainContainer>
     )
   }
 
@@ -42,7 +43,7 @@ function Results (props) {
   let losingIndex = winningIndex === 0 ? 1 : 0;
   return {
     // <div> Results {puke(props)} </div>
-    <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
+    <MainContainer}>
       <h1>Results</h1>
       <div className="col-sm-8 col-sm-offset-2">
         <UserDetailsWrapper header='Winner'>
@@ -53,7 +54,7 @@ function Results (props) {
         </UserDetailsWrapper>
       </div>
       <StartOver />
-    </div>
+    </MainContainer>
   }
 }
 
