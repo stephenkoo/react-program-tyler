@@ -5,6 +5,7 @@ let UserDetails = require('./UserDetails');
 let UserDetailsWrapper = require('./UserDetailsWrapper');
 let Link = require('react-router').Link;
 let MainContainer = require('./MainContainer');
+let Loading = require('./Loading');
 
 // function puke (obj) {
 //   return <pre>{JSON.stringify(obj, 2, ' ')}</pre>
@@ -24,9 +25,7 @@ function StartOver () {
 function Results (props) {
   // isLoading check
   if (props.isLoading === true) {
-    return (
-      <p> LOADING </p>
-    )
+    return <Loading text='One Moment' speed={100} />
   }
 
   // Checks for tie

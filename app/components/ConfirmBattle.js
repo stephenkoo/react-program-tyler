@@ -16,7 +16,7 @@ function ConfirmBattle (object) {
     //     <div> Confirm Battle </div>
     // )
     return props.isLoading === true
-        ? <Loading />
+        ? <Loading speed={800} text='Waiting' />
         // : <div> CONFIRM BATTLE!: {puke(props)} </div>
         : <MainContainer>
             <h1>Confirm Players</h1>

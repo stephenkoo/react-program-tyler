@@ -1,10 +1,17 @@
 let React = require('react');
+let ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+require('../mains.css');
 
 let Main = React.createClass({
   render: function() {
     return (
       <div className='main-container'>
-        {this.props.children} // This is how Main.js loads its child routes
+        <ReactCSSTransitionGroup
+          transitionName="appear"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}>
+          {this.props.children}
+        </ReactCSSTransitionGroup>
       </div>
     )
   }
