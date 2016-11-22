@@ -5,6 +5,7 @@ let link = require('react-router').link;
 let UserDetails = require('./UserDetails');
 let UserDetailsWrapper = require('./UserDetailsWrapper');
 let MainContainer = require('./MainContainer');
+let Loading = require('./Loading');
 
 // function puke (object) {
 //   return <pre>{JSON.stringify(obj, null, '')}</pre>
@@ -15,7 +16,7 @@ function ConfirmBattle (object) {
     //     <div> Confirm Battle </div>
     // )
     return props.isLoading === true
-        ? <p> LOADING! </p>
+        ? <Loading />
         // : <div> CONFIRM BATTLE!: {puke(props)} </div>
         : <MainContainer>
             <h1>Confirm Players</h1>
