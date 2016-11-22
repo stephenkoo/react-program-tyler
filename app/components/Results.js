@@ -9,17 +9,31 @@ let Link = require('react-router').Link;
 //   return <pre>{JSON.stringify(obj, 2, ' ')}</pre>
 // }
 
+// Private stateless functional component
+function StartOver () {
+  return (
+    <div className='col-sm-12' style={styles.space}>
+      <Link to='/playerOne'>
+        <button type='button' cxwlassName='btn btn-lg btn-danger'>Start Over</button>
+      </Link>
+    </div>
+  )
+}
+
 function Results (props) {
+  // isLoading check
+  if (props.isLoading === true) {
+    return (
+      <p> LOADING </p>
+    )
+  }
+
   // Checks for tie
   if (props.scores[0] === props.scores[1]) {
     return (
       <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
         <h1>It's a tie!</h1>
-        <div className='col-sm-12' style={styles.space}>
-          <Link to='/playerOne'>
-            <button type='button' className='btn btn-lg btn-danger'>Start Over</button>
-          </Link>
-        </div>
+        <StartOver />
       </div>
     )
   }
@@ -38,11 +52,7 @@ function Results (props) {
           <UserDetails score={pros.scores[losingIndex]} info={props.playerInfor[losingIndex]} />
         </UserDetailsWrapper>
       </div>
-      <div className='col-sm-12' style={styles.space}>
-        <Link to='/playerOne'>
-          <button type='button' className='btn btn-lg btn-danger'>Start Over</button>
-        </Link>
-      </div>
+      <StartOver />
     </div>
   }
 }
